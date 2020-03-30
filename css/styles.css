@@ -51,6 +51,7 @@ header nav.desktop ul li a{
 }
 
 header nav.mobile {
+	z-index: 2;
 	margin-top: 30px;
 	margin-right: 15px;
 	float: right;
@@ -58,14 +59,14 @@ header nav.mobile {
 	height: 32px;
 	background-size: 100% 100%;
 	cursor: pointer;
-	background-image: url("../images/menu.png");
+	background-image: url("../images/site/menu.png");
 	display: none;
 }
 
 header nav.mobile ul {
 	width: 100%;
 	left: 0;
-	top: 90px;
+	top: 120px;
 	position: absolute;
 	text-align: center;
 	list-style-type: none;
@@ -81,6 +82,10 @@ header nav.mobile li {
 	font-style: italic;
 }
 
+header nav.mobile li:hover {
+	background-color: rgb(210,210,210);
+}
+
 header nav.mobile li a {
 	color: black;
 	text-decoration: none;
@@ -92,7 +97,7 @@ section.banner {
 	min-height: 600px;
 	max-height: calc(100vh - 130px);
 	background-color: black;
-	background-image: url("../images/bg.jpg");
+	background-image: url("../images/site/bg.jpg");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: right;
@@ -110,7 +115,7 @@ section.banner {
 	text-transform: uppercase;
 	color: white;
 	font-size: 23px;
-	background-image: url("../images/box-red-text.png");
+	background-image: url("../images/site/box-red-text.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	text-align: center;
@@ -123,7 +128,7 @@ section.banner {
 	font-size: 20px;
 	padding: 15px 0;
 	color: black;
-	background-image: url("../images/box-white-text.png");
+	background-image: url("../images/site/box-white-text.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	text-align: center;
@@ -413,19 +418,19 @@ section.venda {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 30%;
+	width: 0;
 	height: 20px;
 	background-image: linear-gradient(to bottom,rgb(255,255,255),rgb(200,200,200));
 	border-radius: 20px;
 }
 
 .pointer-barra {
+	z-index: 1;
 	width: 22px;
 	height: 22px;
 	position: absolute;
-	left: calc(30% - 13px);
+	left: 0;
 	top: -1px;
-	z-index: 999;
 	border-radius: 11px;
 	background-image: linear-gradient(to bottom,rgb(255,255,255),rgb(180,180,180));
 	border: 1px solid rgb(150,150,150);
@@ -559,7 +564,7 @@ section.venda-single .container {
 	top: 50%;
 	transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
-	background-image: url("../images/arrow-left.png");
+	background-image: url("../images/site/arrow-left.png");
 	background-size: 100% 100%;
 	width: 22px;
 	height: 22px;
@@ -572,7 +577,7 @@ section.venda-single .container {
 	top: 50%;
 	transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
-	background-image: url("../images/arrow-right.png");
+	background-image: url("../images/site/arrow-right.png");
 	background-size: 100% 100%;
 	width: 22px;
 	height: 22px;
@@ -580,7 +585,7 @@ section.venda-single .container {
 }
 
 .nav-galeria-wraper {
-	width: 200%;
+	/*width: 200%;*/
 }
 
 .info-bread {
@@ -609,7 +614,7 @@ section.venda-single .container {
 .mini-img-wraper {
 	float: left;
 	padding: 9px;
-	width: calc(33.3% * (100 / 200) );
+	/*width: calc(33.3% * (100 / 200) );*/
 }
 
 .mini-img {
@@ -634,6 +639,7 @@ section.sobre .img-destaque-sobre {
 	width: 100%;
 	padding-top: 60%;
 	background-color: gray;
+	background-image: url("../images/site/about1.jpg");
 }
 
 section.sobre .descricao-autor {
@@ -666,6 +672,8 @@ section.sobre .descricao-autor {
 	padding-top: 30%;
 	float: left;
 	background-color: gray;
+	background-image: url('../images/site/about2.jpg');
+	background-size: 100% 100%;
 }
 
 
